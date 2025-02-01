@@ -8,6 +8,8 @@ backend:
 frontend:
   phases:
     build:
+      preBuild:
+        - npm install -g @aws-amplify/cli@12.14.2
       commands:
         - nvm install 18
         - nvm use 18
