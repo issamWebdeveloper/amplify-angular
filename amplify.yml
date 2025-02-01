@@ -8,12 +8,7 @@ backend:
 frontend:
   phases:
     build:
-      preBuild:
-        - npm install -g @aws-amplify/cli@12.14.2
       commands:
-        - nvm install 18
-        - nvm use 18
-        - npm install -g @aws-amplify/cli
         - npm install -g @angular/cli
         - ng version
         - ng build --configuration=production
